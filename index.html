@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NordRoute - Connect with Remote Norway</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roots & Routes</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-gray-800 font-sans">
   <!-- Hero Section -->
-  <header class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://i.imgur.com/x8ug6iH.jpg');">
-    <div class="bg-black bg-opacity-50 p-8 rounded-xl text-center max-w-2xl">
-      <h1 class="text-4xl md:text-5xl text-white font-bold mb-4">Discover Remote Norway</h1>
-      <p class="text-lg text-gray-200 mb-6">Hidden trails, cabins by the fjords, and unfiltered nature. NordRoute is your guide.</p>
-      <a href="#contact" class="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition">Start your journey</a>
-    </div>
-  </header>
-
-  <!-- About the App -->
-  <section class="py-16 px-6 md:px-20 bg-gray-50">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Travel Differently</h2>
-      <p class="text-lg text-gray-600">NordRoute is more than a trail app: it's a travel philosophy. Connect with real nature, far from mass tourism.</p>
-    </div>
-    <div class="grid md:grid-cols-3 gap-4 mt-12">
-      <img src="https://i.imgur.com/WsOTxsu.jpg" alt="Mountain Cabin with Sunlight" class="rounded-lg shadow" />
-      <img src="https://i.imgur.com/DYmdLof.jpg" alt="Sunlit Landscape View" class="rounded-lg shadow" />
-      <img src="https://i.imgur.com/V2SVv7L.jpg" alt="Sunlit Norwegian Fjord" class="rounded-lg shadow" />
+  <section class="relative w-full h-screen bg-cover bg-center flex items-center justify-center text-white text-center px-6" style="background-image: url('https://i.imgur.com/hNu511x.jpg');">
+    <div class="bg-black bg-opacity-50 p-8 rounded-xl max-w-3xl">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Discover Norway Like Never Before</h1>
+      <p class="text-lg md:text-xl mb-6">Live unique experiences in Norway's remote nature with your family. Creative workshops, real connection, and unforgettable adventures await.</p>
+      <a href="#contact" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">Join the experience</a>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="bg-gray-100 py-16 px-6 md:px-20">
-    <div class="max-w-xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-6">Get in Touch</h2>
-      <form class="space-y-6">
+  <!-- About Section -->
+  <section class="py-20 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">What is Roots & Routes?</h2>
+      <p class="text-lg text-gray-700 mb-10">Roots & Routes is a network of traveling workshops in the Norwegian wilderness, designed for nomadic families looking to share meaningful moments, learn in community, and reconnect with what truly matters. All our activities are pet-friendly, because no family member should be left behind.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <img src="https://i.imgur.com/bYutH8v.jpg" alt="Workshop 1" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="https://i.imgur.com/0CDDLWK.jpg" alt="Workshop 2" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="https://i.imgur.com/kJiRe3J.jpg" alt="Workshop 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Shared Moments in Nature</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <img src="https://i.imgur.com/btsJ082.jpg" alt="Testimonial 1" class="w-full h-64 object-cover rounded-lg shadow-md">
+        <img src="https://i.imgur.com/bIvSl5i.jpg" alt="Testimonial 2" class="w-full h-64 object-cover rounded-lg shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-20 px-6 bg-gray-100">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Want to Join Roots & Routes?</h2>
+      <form action="https://formspree.io/f/moqzklaw" method="POST" class="bg-white shadow-md rounded-lg p-8 space-y-6">
         <div>
-          <label class="block text-gray-700">Name</label>
-          <input type="text" class="w-full mt-1 p-3 border rounded" placeholder="Your name" required>
+          <label for="name" class="block font-semibold mb-2">Name</label>
+          <input type="text" name="name" id="name" required class="w-full border border-gray-300 p-3 rounded-md">
         </div>
         <div>
-          <label class="block text-gray-700">Email</label>
-          <input type="email" class="w-full mt-1 p-3 border rounded" placeholder="your@email.com" required>
+          <label for="email" class="block font-semibold mb-2">Email</label>
+          <input type="email" name="email" id="email" required class="w-full border border-gray-300 p-3 rounded-md">
         </div>
         <div>
-          <label class="block text-gray-700">Message</label>
-          <textarea class="w-full mt-1 p-3 border rounded" rows="4" placeholder="Tell us your idea..." required></textarea>
+          <label for="message" class="block font-semibold mb-2">Message</label>
+          <textarea name="message" id="message" rows="5" required class="w-full border border-gray-300 p-3 rounded-md"></textarea>
         </div>
-        <button type="submit" class="w-full bg-teal-600 text-white py-3 rounded font-semibold hover:bg-teal-700">Send Message</button>
+        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">Send</button>
       </form>
-      <p class="text-center text-sm text-gray-500 mt-6">Or email us directly at <a href="mailto:nordroutecontact@gmail.com" class="underline">nordroutecontact@gmail.com</a></p>
+      <p class="text-center text-sm text-gray-500 mt-6">Or contact us directly: nordroutecontact@gmail.com</p>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-6">
-    <p class="text-sm">&copy; 2025 NordRoute. Travel slow, travel deep.</p>
-  </footer>
 </body>
 </html>
